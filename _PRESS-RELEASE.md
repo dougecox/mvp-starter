@@ -17,28 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+ > Postcard Address Helper 
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+ >  For people traveling who want to access the address of friends and family in one UI friendly location
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Remove the worry of trying to track down address information in a centralize reposity when writing a post card. Provide the user to ablility to mark if the've already used the person(s) address, easily switch between each addresses they are looking for. Can also catogrize them in buckets such as friends, family, etc. Also keeps track of addresses used to keep track of who you wrote to, and from where.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > easy accessible information in a friendly UX that allows your to cycle through address, specifically for writing postcards. putting information thats in a variety of places such as emails, text, sms into one location, and to succintly deduce if you've already written a post card for that address.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > displays section for inserting and getting addresses. For getting and cycling through the addressess there's a next and previous button, along with checkbox to mark if you've used it for your current session. 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Making it easy for our user's to send Postcards, from anywhere.
 
 ## How to Get Started ##
+  > 3 easy steps! Sign up, add addresses, use
   > Describe how easy it is to get started.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > Saved me time when traveling not wasting it cycling through my phone searching to SMS, emails, etc to access the information i was looking for. and the friendly UX made it clear on whom i already wrote too!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > use our free web service at realmail.io
