@@ -27,8 +27,25 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
+      <h1>Address Book</h1>
+      
+      <div className="AddOrRead">
+        <AddOrRead choice={this.state.choice}/>
+      </div>
+
+
+      <div className="col-md-5">
+        <List items={this.state.items}/>
+      </div>
+
+
+      <div className="Address">
+        <MenuBar items={this.state.menuBar} />
+      </div>
+
+
+       
+
     </div>)
   }
 }

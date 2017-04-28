@@ -12,18 +12,22 @@ db.once('open', function() {
 });
 
 var itemSchema = mongoose.Schema({
-  quantity: Number,
-  description: String
+  name: String,
+  address: String,
+  zipCode: Number,
+  country: String
+  // quantity: Number,
+  // description: String
 });
 
-var Item = mongoose.model('Item', itemSchema);
+var AddressBook = mongoose.model('AddressBook', AddressBookSchema);
 
 var selectAll = function(callback) {
-  Item.find({}, function(err, items) {
+  AddressBook.find({}, function(err, addresses) {
     if(err) {
       callback(err, null);
     } else {
-      callback(null, items);
+      callback(null, addresses);
     }
   });
 };
