@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 // var items = require('../database-mysql');
-var cards = require('../database-mongo');
+var cards = require('../database-mongo/index.js');
 
 var app = express();
 
@@ -16,6 +16,7 @@ app.use(express.static(__dirname + '/../react-client/dist'));
 app.get('/cards', function (req, res) {
   cards.selectAll(function(err, data) {
     if(err) {
+      console.log('from server')
       res.sendStatus(500);
     } else {
       res.json(data);

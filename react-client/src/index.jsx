@@ -23,6 +23,7 @@ class App extends React.Component {
       formData: { 
         fullname: '',
         address: '',
+        city: '',
         state: '',
         zipCode: '',
         country: ''
@@ -36,13 +37,12 @@ class App extends React.Component {
       success: (data) => {
         this.setState({
           cards: data,
-
-
         })
+        console.log('this.state.cards', this.state.cards)
       },
       error: (err) => {
         console.log('err', err);
-        console.log('within componentDidMount')
+        console.log('error within componentDidMount')
       }
     });
   }

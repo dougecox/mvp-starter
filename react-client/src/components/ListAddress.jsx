@@ -10,6 +10,9 @@ const ListAddress = (props) => (
 	    <div className="address">
 	      { props.card.address }
 	    </div>
+	    <div className="city">
+	      { props.card.city }
+	    </div>
 	    <div className="state">
 	      { props.card.state }
 	    </div>

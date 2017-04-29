@@ -13,7 +13,9 @@ class FillAddress extends React.Component {
       <input type="text" name="fullName" onChange={this.props.inputChange} />
       <br></br> Address: <br/>
 		  <input type="text" name="address" onChange={this.props.inputChange} />
-		  <br></br> State: <br/>
+		  <br></br> City: <br/>
+      <input type="text" name="city" onChange={this.props.inputChange} />
+      <br></br> State: <br/>
       <input type="text" name="state" onChange={this.props.inputChange} />
 		  <br></br> Zip Code: <br/>
       <input type="text" name="zipCode" onChange={this.props.inputChange} />
