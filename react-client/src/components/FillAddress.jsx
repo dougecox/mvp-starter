@@ -10,9 +10,9 @@ class FillAddress extends React.Component {
     <h4> Enter New Address </h4>
     <form onSubmit={this.props.submitChange}>
       Full Name: <br/>
-      <input type="text" name="fullName" onChange={this.props.inputChange} />
+      <input type="text" name="fullname" onChange={this.props.inputChange} />
       <br></br> Address: <br/>
-		  <input type="text" name="address" onChange={this.props.inputChange} />
+		  <input type="text" name="street" onChange={this.props.inputChange} />
 		  <br></br> City: <br/>
       <input type="text" name="city" onChange={this.props.inputChange} />
       <br></br> State: <br/>

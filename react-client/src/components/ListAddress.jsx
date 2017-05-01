@@ -2,28 +2,30 @@ import React from 'react';
 
 const ListAddress = (props) => (
    // ternary on props.card exist
-   props.card ? 
+    
 	  <div>
+	  <input type="checkbox"/> completed
 	    <div className="name">
-	      { props.card.fullname }
+	      { props.fullname }
 	    </div>
 	    <div className="address">
-	      { props.card.address }
+	     { props.street}
 	    </div>
 	    <div className="city">
-	      { props.card.city }
+	      { props.city }
 	    </div>
 	    <div className="state">
-	      { props.card.state }
+	      { props.state }
 	    </div>
 	    <div className="zipCode">
-	      { props.card.zipCode }
+	      { props.zipCode }
 	    </div>
 	    <div className="country">
-	      { props.card.country }
+	      { props.country }
 	    </div>
+	    ----------------------------------
 	  </div>
-  		: null
+  		
 
 )
 

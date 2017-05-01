@@ -12,8 +12,8 @@ db.once('open', function() {
 });
 
 var AddressBookSchema = mongoose.Schema({
-  name: String,
-  address: String,
+  fullname: String,
+  street: String,
   state: String,
   zipCode: Number,
   country: String
@@ -21,31 +21,30 @@ var AddressBookSchema = mongoose.Schema({
   // description: String
 });
 
-
+                                                                                                                 
 var addressBook = mongoose.model('AddressBook', AddressBookSchema);
 
-var dummyData = new addressBook({
-  name: "Don turtle",
-  address: "32 Maple St",
-  city: "Brooklyn",
-  state: "NY",
-  zipCode: 04105,
-  country: 'USA'
+// var dummyData = new addressBook({
+//   fullname: "Douglas Cox",
+//   street: "944 Market Street",
+//   city: "San Francisco",
+//   state: "California",
+//   zipCode: 94105,
+//   country: 'USA'
 
-});
+// });
 
-dummyData.save(function(err) {
-  if (err) throw err;
-  console.log('User created!');
-});
-// console.log(db.addressbooks.find());
+// dummyData.save(function(err) {
+//   if (err) throw err;
+//   console.log('User created!', dummyData.fullname);
+// });
+// console.log('addressbooks.find', db.addressbooks.find());
 // db.addressBook.findOneAndUpdate(dummyData);
 
 
 var selectAll = function(callback) {
-  AddressBook.find({}, function(err, addresses) {
+  addressBook.find({}, function(err, addresses) {
     if(err) {
-      console.log('indb')
       callback(err, null);
     } else {
       callback(null, addresses);
@@ -54,3 +53,5 @@ var selectAll = function(callback) {
 };
 
 module.exports.selectAll = selectAll;
+
+module.exports.addressBook = addressBook;

@@ -22,7 +22,7 @@ class App extends React.Component {
       },
       formData: { 
         fullname: '',
-        address: '',
+        street: '',
         city: '',
         state: '',
         zipCode: '',
@@ -68,10 +68,12 @@ class App extends React.Component {
             <AddOrRead choice={this.state.choice}/>
             </div>*/}
 
-
+      
       <div className="col-mid-7">
         <FillAddress inputChange={this.handleInputChange} submitChange={this.handleSubmit}/> 
-        <ListAddress address={this.state.currentCard}/>
+        {console.log("#cards", this.state.cards.length)}
+        {console.log("cards[0]", this.state.cards[0])}
+        // <ListAddress address={this.state.cards[0]}/>
       </div>
 
       <div className="col-md-4">
@@ -79,7 +81,7 @@ class App extends React.Component {
       </div>
 
       <div className="menuBar">
-        <MenuBar items={this.state.menuBar} />
+        <MenuBar items={this.state.menuBar} prev={this.state.menuBar.options.prev} next={this.state.menuBar.options.next}/>
       </div>
 
     </div>)

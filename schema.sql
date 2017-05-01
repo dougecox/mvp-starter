@@ -1,13 +1,16 @@
 DROP DATABASE IF EXISTS test;
 
-CREATE DATABASE test;
+CREATE DATABASE cards;
 
-USE test;
+USE cards;
 
 CREATE TABLE items (
   id int NOT NULL AUTO_INCREMENT,
-  quantity integer NOT NULL,
-  description varchar(50) NOT NULL,
+  name varchar(40) NOT NULL,
+  address varchar(40) NOT NULL,
+  state varchar(40) NOT NULL,
+  zipCode varchar(40) NOT NULL,
+  country varchar(40) NOT NULL,
   PRIMARY KEY (ID)
 );
 

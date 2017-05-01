@@ -1,16 +1,27 @@
 import React from 'react';
-import ListItem from './ListAddress.jsx';
+import ListAddress from './ListAddress.jsx';
 
 const List = (props) => (
   <div>
-    <h4> Address List Component </h4>
+    <h4> Address Lists </h4>
     There are { props.cards.length } addresses.
-    {/* ternary on props.card exist*/}
 
-    {props.cards ?
-       props.cards.map(address => <ListAddress card={address}/>) 
-      : null}
+    {/* ternary on props.card exist*/}
+    
+    
+    {props.cards.map(card => <ListAddress 
+      fullname={card.fullname} 
+      street={card.street}
+      city={card.city}
+      state={card.state}
+      zipCode={card.zipCode}
+      country={card.country}
+      />) }
+    
+
   </div>
 )
 
 export default List;
+
+
